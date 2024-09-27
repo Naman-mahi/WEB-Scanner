@@ -1,0 +1,30 @@
+Testing vulnerabilities for: http://unicreds.org
+
+=== Authentication Failures ===
+[-] No weak credentials detected.
+
+=== SQL Injection ===
+[!] SQL Injection vulnerability found with payload: ' OR '1'='1'; --
+
+=== Cross-Site Scripting (XSS) ===
+[-] No XSS vulnerability detected.
+
+=== Remote Code Execution (RCE) ===
+[-] No RCE vulnerability detected.
+
+=== Local File Inclusion (LFI) ===
+[-] No LFI vulnerability detected.
+
+=== Unvalidated Redirects ===
+[!] Unvalidated redirect found to: https://unicreds.org/redirect?url=http://evil.com
+
+=== Insecure Direct Object References (IDOR) ===
+[!] IDOR vulnerability found with ID: 1
+
+=== Cross-Site Request Forgery (CSRF) ===
+[-] No CSRF vulnerability detected.
+
+=== Security Misconfigurations ===
+[!] Missing security header: X-Content-Type-Options
+[!] Missing security header: X-Frame-Options
+[!] Missing security header: X-XSS-Protection

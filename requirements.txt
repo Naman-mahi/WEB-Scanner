@@ -1,0 +1,20 @@
+requests==2.26.0                       # HTTP library for making requests
+python-nmap==0.7.1                     # Nmap library for network scanning
+python-owasp-zap-v2.4==0.0.13          # OWASP ZAP API client for automated scanning
+beautifulsoup4==4.10.0                 # HTML/XML parsing
+sqlmap==1.5.11                         # Automatic SQL injection tool
+wfuzz==3.1.0                           # Web application brute-forcing tool
+faker==9.8.2                           # Generate fake data for testing
+httpx==0.22.0                          # Asynchronous HTTP client for advanced requests
+pytest==6.2.5                          # Testing framework
+pytest-html==3.1.1                     # HTML reporting for pytest
+paramiko==2.7.2                        # SSH connection library
+docker==5.0.3                          # Manage Docker containers for testing environments
+pydantic==1.8.2                        # Data validation using Python type annotations
+lxml==4.6.3                            # Fast XML and HTML parsing
+pyfiglet==0.8.post1                    # ASCII art for better CLI output
+click==8.0.3                           # Command-line interface library
+burpSuite==1.0.0                        # Burp Suite API client for interacting with the Burp Suite
+
+
+#pip install -r requirements.txt

@@ -1,0 +1,7 @@
+http://evil.com
+http://malicious-site.com
+https://example.com
+http://localhost:3000
+https://my-redirect.com
+http://phishing-site.com
+http://redirected-site.com

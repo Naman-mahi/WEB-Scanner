@@ -1,0 +1,2 @@
+http://evil.com
+http://attacker.com

